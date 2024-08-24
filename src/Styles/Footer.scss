@@ -179,3 +179,17 @@
         }
     }
 }
+
+@media screen and (max-width:768px) {
+    .footer_main2{
+        display: none;
+    }
+
+    .footer_main2_second{
+        display: none;
+    }
+
+    .footer_main_second_icon{
+        display: none;
+    }
+}
