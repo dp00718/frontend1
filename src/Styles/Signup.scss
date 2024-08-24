@@ -1,0 +1,71 @@
+.signup_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: loginopen 1s ease;
+
+
+    .signup_page{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 450px;
+        height: 500px;
+        border: 3px solid black;
+        border-radius: 30px;
+        background-color: rgba(255, 255, 0, 0.207);
+
+        .signup_page_button{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 300px;
+        }
+    
+        .login_close_button{
+        
+            svg{      
+                position: absolute;   
+                display: flex;
+                justify-content: right;
+                top: 10px;
+                right: 10px;
+                cursor: pointer;
+                animation: close 0.3s ease-in;
+
+                &:hover{
+                    color: red;
+                    transform: scale(1.3);
+                }
+
+            }
+    }
+    }
+
+    .signup_name{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+
+    .signup_page_main{
+        height: 40px;
+    }
+
+    }
+
+    .signup_close{
+        margin-top: -10px;
+        color: blue;
+        cursor: pointer;
+        border-bottom: 1px solid blue;
+
+    }
+
+    @keyframes loginopen {
+        0% {transform: scale(0);}
+        100% {transform: scale(1)}   
+    }
+}

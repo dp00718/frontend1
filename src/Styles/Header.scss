@@ -1,0 +1,56 @@
+.header_main{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.207);
+   
+
+    .header_main_left{
+       
+      
+       
+        h2{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 0.56);
+            border: 1px solid rgba(0, 0, 0, 0.705);
+            background-color: rgba(0, 0, 0, 0.705);
+            text-align: center;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 0;
+            letter-spacing: 2px;
+            cursor: pointer;
+
+            &:hover{
+                color: white;
+                background-color: black;
+                transition: 0.5s ease;
+            }
+        }
+        .header_main_left_icon{
+           margin: 0;
+           padding-top: 3px; 
+
+           &:hover{
+            cursor: pointer;
+           }
+        }
+    }
+
+    .header_main_right{
+        display: flex;
+      
+
+.logout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px 10px;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+    }
+}

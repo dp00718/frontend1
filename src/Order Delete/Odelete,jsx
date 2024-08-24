@@ -1,0 +1,30 @@
+import React, { useState } from 'react';
+
+const Odelete = () => {
+  const [orderDetails, setOrderDetails] = useState([
+    { id: 1, name: 'Product A', quantity: 2 },
+    { id: 2, name: 'Product B', quantity: 1 },
+    // other products
+  ]);
+
+  const deleteProduct = (productId) => {
+    const updatedOrderDetails = orderDetails.filter(product => product.id !== productId);
+    setOrderDetails(updatedOrderDetails);
+  };
+
+  return (
+    <div>
+      <h2>Your Order</h2>
+      <ul>
+        {orderDetails.map(product => (
+          <li key={product.id}>
+            {product.name} (Quantity: {product.quantity})
+            <button onClick={() => deleteProduct(product.id)}>Remove</button>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+export default Odelete;

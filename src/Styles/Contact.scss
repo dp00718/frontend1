@@ -1,0 +1,67 @@
+@import "../Page/mixin.scss";
+.contact_main{
+    display: flex;
+  padding: 20px 10px;
+  flex-flow: wrap;
+justify-content: space-around;
+
+
+@include md{
+    flex-direction: column-reverse;
+}
+
+
+    .contact_details{
+     
+    display: flex;
+   max-width: 400px;
+   align-self: center;
+   gap: 20px;
+flex-direction: column;
+    .location{
+        padding: 10px;
+
+        p{
+            font-weight: 600;
+        }
+    }
+    
+    
+ 
+
+    .follow_us{
+ padding: 10px;
+
+        .follow_us_icons{
+              display: flex;
+              gap: 20px;
+              font-size: 30px;
+            
+        }
+    }
+}
+
+.contact_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  gap: 20px;
+  padding-left: 0;
+
+    
+
+    
+    .contact_form_button{
+        width: fit-content;
+        border: 2px solid white;
+    
+    }
+
+}
+
+
+
+}
+
+

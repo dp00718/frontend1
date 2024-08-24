@@ -1,0 +1,75 @@
+.login_main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      
+
+        h2{
+            text-align: center;
+        }
+    
+        .login_page{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            border: 3px solid black;
+            border-radius: 20px;
+            width: 300px;
+            height: 350px;
+            padding: 10px;
+            position: relative;
+            margin: 0;
+            justify-content:space-around;
+            align-items: center;
+
+            .login_close_button{
+               position: absolute;
+               top: 20px;
+               right: 10px;
+            
+            
+                    svg:hover{
+                        color: red;
+                        transform: scale(1.3);
+                        cursor: pointer;
+                    }
+            
+            }
+         
+
+            .logindetails{
+                margin: 20px;
+            }
+
+
+
+        @keyframes loginopen {
+            0% {   
+            transform: translateX (scale(0)) ;}
+        
+            100% {
+            transform: translateY (scale(1)) ;}   
+        }
+        
+    }
+   
+     
+}
+
+
+
+.login_main_botton{
+    display: flex;
+    gap: 10px;
+    // margin-top: -60px;
+
+    .login_register{
+        color: blue;
+        border-bottom: 1px solid blue;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
