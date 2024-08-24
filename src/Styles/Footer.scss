@@ -208,7 +208,7 @@
 @media only screen and (max-width: 768px) {
     
     
-    *{
+    .footer_main{
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -223,16 +223,13 @@
       }
     }
 
-    .footer_main_second {
-      margin-top: 20px;
-
-      h4 {
-        font-size: 16px;
-      }
-
-      .footer_main_second_icon {
-        font-size: 20px;
-      }
+    .footer_main2{
+        .footer_main2_second{
+            .second_main2{
+                display: none;
+            }
+        }
     }
+
   }
 }
