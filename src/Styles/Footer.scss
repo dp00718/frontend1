@@ -217,19 +217,14 @@
       flex-direction: column;
       align-items: center;
       gap: 20px;
-
-      div {
-        align-items: center;
+      align-items: center;
+      
+      .footer_main_second{
+        display: none;
       }
     }
-
-    .footer_main2{
-        .footer_main2_second{
-            .second_main2{
-                display: none;
-            }
-        }
     }
-
-  }
+.footer_main2{
+    display: none;
 }
+  }
