@@ -180,7 +180,7 @@
     }
 }
 
-.footer_main3{
+.third_main1{
     display: none;
 }
 
@@ -214,7 +214,6 @@
     
     .footer_main{
     display: none;
-
 }
     .third_main1 {
         display: flex;
@@ -222,7 +221,6 @@
         width: 50px;
         height: 60px;
         padding: 0 5px;
-        margin-right: 5px;
         font-family:Verdana, Geneva, Tahoma, sans-serif;
         text-align: center;
         align-items: center;
@@ -231,6 +229,8 @@
         background-color:rgba(255, 255, 0, 0.322);
         color: rgba(0, 0, 0, 0.764);
         font-size: smaller;
+        margin-left: 150px;
+        
 
         &:hover{
             cursor: pointer;

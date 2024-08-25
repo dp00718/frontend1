@@ -3,10 +3,8 @@
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
-    padding: 20px;
   
     .product-item {
-      flex: 0 1 30%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -17,15 +15,15 @@
       background-color: #f9f9f9;
   
       img {
-        width: 100%;
-        height: auto;
+        width: auto;
+        height: 100px;
         cursor: pointer;
         border-radius: 8px;
-        margin-bottom: 15px;
         transition: transform 0.3s ease;
   
         &:hover {
           transform: scale(1.05);
+          border-radius: 10px;
         }
       }
   
@@ -73,10 +71,14 @@
         color: red;
         margin-bottom: 15px;
       }
+
+      .header_cart_wish_button{
+        display: flex;
+        gap: 10px;
+      }
   
       button {
-        padding: 10px 20px;
-        margin: 10px 0;
+       
         border: none;
         border-radius: 4px;
         background-color: #007bff;
@@ -96,15 +98,20 @@
     }
   
     @media (max-width: 768px) {
-      flex-direction: column;
-      align-items: center;
-  
+
+      height: 100%;
+      margin: auto;
+      
       .product-item {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
         flex: 0 1 100%;
-        margin-bottom: 20px;
-  
+        max-width: 300px; 
         img {
-          width: 100%;
+        max-width: 100%;
+        height: auto;
         }
       }
     }

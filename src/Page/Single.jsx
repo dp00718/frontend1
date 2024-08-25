@@ -1,7 +1,9 @@
 import React, { useContext } from 'react';
 import MyContext from '../Common/MyContext';
 import { useParams } from 'react-router-dom';
-import './Product.scss';  // Make sure to import the SCSS file
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { FaHeart } from 'react-icons/fa';
+import '../Styles/Single.scss';  // Make sure to import the SCSS file
 
 const Single = () => {
     const { data,sizeerror,handlecart,size,setSize,handlewish,isProductInWish,loader } = useContext(MyContext);
@@ -39,12 +41,13 @@ const Single = () => {
                                                 </div>
 
                                                { sizeerror && !size&&<h4>select size</h4>}
-
-                                                <button onClick={()=>handlecart(outer.id,inner.id,inner.imgs,inner.single_product_category,inner.product_price)}>Add To Cart</button>
+                                                <div className='header_cart_wish_button'>
+                                                <button onClick={()=>handlecart(outer.id,inner.id,inner.imgs,inner.single_product_category,inner.product_price)}><ShoppingCartIcon/></button>
                                                 {  !isProductInWish(outer.id,inner.id)?
-                                                <button onClick={()=>handlewish(outer.id,inner.id,inner.imgs,inner.single_product_category,inner.product_price)}>{loader   ?'ADDING...':'Add to Wishlist'}</button>:
+                                                <button onClick={()=>handlewish(outer.id,inner.id,inner.imgs,inner.single_product_category,inner.product_price)}>{loader   ?'ADDING...':<FaHeart/>}</button>:
                                                 <button onClick={() => window.location.href='/wish'}>Go To Wish </button>
                                                 }
+                                                </div>
                                                 
                                             </div>
                                         );
