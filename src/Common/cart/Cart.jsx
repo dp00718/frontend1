@@ -54,7 +54,6 @@ const Cart = () => {
 
             <p>{TotalValue}</p>
 
-            <button onClick={() =>window.location.href='/checkout'}>checkout</button>
             
             {cart && cart.length > 0 ? (
               cart.map((item) => (
@@ -75,6 +74,8 @@ const Cart = () => {
             ) : (
               <p>Your cart is empty.</p>
             )}
+
+              <button onClick={() =>window.location.href='/checkout'}>checkout</button>
           </div>
         </div>
       )}

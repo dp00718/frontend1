@@ -23,7 +23,7 @@ const Single = () => {
                                         return (
                                             <div className="product-item">
                                                 <img src={inner.imgs} alt="" onClick={()=>window.open(`/category/${outer.product_category}/${inner.single_product_category}`)}/>
-                                                <h3>{inner.product_name}</h3>
+                                                <h3>{inner.single_product_category}</h3>
                                                 <p className="price">{inner.product_price}</p>
 
                                                 <div className="size-list">
