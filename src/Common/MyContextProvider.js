@@ -471,8 +471,16 @@ const  generateCaptcha = () =>{
       }
     };
 
+    const handleSizeSelection = (productId, sizeId) => {
+      setData(data.map(product =>
+        product.id === productId
+          ? { ...product, selectedSize: sizeId }
+          : product
+      ));
+    };
+
 return (
-<MyContext.Provider value={{removeProductFromOrder,handleSubmit,handleRefresh,error, setError,enter, setEnter,captcha, setCaptcha,generateCaptcha,order, setOrder,wish, setWish,handlewish,removeProductFromWish,isProductInWish,edit,setEdit,shipping,setShipping,TotalValue,handleIncreaseQuantity,handleDecreaseQuantity,removeProductFromCart,cart, setCart,userdata,setUserdata,openaccount,setOpenaccount,handlecart,size,setSize,sizeerror,setSizeerror,login,setLogin,data,handlecartclose,handelclick8,handlecartopen,cartopen,setCartopen,setShowPassword1,showPassword1,handelclick1,handelclick2,handelclick3,handelclick4,handelclick5,handelclick6,open1,setOpen1,handelclick,token,setToken,open,setOpen,message,setMessage,showPassword,setShowPassword,loader,setLoader,handelclick7}} >
+<MyContext.Provider value={{handleSizeSelection, removeProductFromOrder,handleSubmit,handleRefresh,error, setError,enter, setEnter,captcha, setCaptcha,generateCaptcha,order, setOrder,wish, setWish,handlewish,removeProductFromWish,isProductInWish,edit,setEdit,shipping,setShipping,TotalValue,handleIncreaseQuantity,handleDecreaseQuantity,removeProductFromCart,cart, setCart,userdata,setUserdata,openaccount,setOpenaccount,handlecart,size,setSize,sizeerror,setSizeerror,login,setLogin,data,handlecartclose,handelclick8,handlecartopen,cartopen,setCartopen,setShowPassword1,showPassword1,handelclick1,handelclick2,handelclick3,handelclick4,handelclick5,handelclick6,open1,setOpen1,handelclick,token,setToken,open,setOpen,message,setMessage,showPassword,setShowPassword,loader,setLoader,handelclick7}} >
 {children}
 </MyContext.Provider>
 )
