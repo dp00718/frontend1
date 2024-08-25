@@ -48,12 +48,11 @@ const {handelclick3,handelclick4,handelclick5,handelclick6,handelclick8} = useCo
     <div className='third_main'>T & C</div>
     </div>
 
-    <div className='footer_main3'>
-    <div className='footer_main3_first' onClick={() => window.location.href='/'}>NIR .</div>
-    <div className='footer_main3_second'>
+    
+
     <div className='third_main1' onClick={handelclick8}>Contact-Us</div>
-    </div>
-    </div>
+  
+
 
     </>
   )
