@@ -228,92 +228,95 @@
       }
     }
     }
-    .footer_main3{
-        position: fixed;
-        bottom: 5%;
-        left: 35%;
-        // width: 100%;
-        border-radius: 15px;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-        gap: 10px;
-        padding: 5px;
-        border: 1px solid rgba(0, 0, 0, 0.122);
-        height: 70px;
-        background-color: rgba(0, 0, 0, 0.715);
-        font-size:large;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
-    
-       .footer_main3_first {
-        display: flex;
-        border: 1px solid rgba(0, 0, 0, 0.315);
-        width: fit-content;
-        height: 60px;
-        padding: 0 10px;
-        margin-left: 5px;
+  
+  .footer_main2{
+    display: none;
+  }
+
+  .footer_main3{
+    position: fixed;
+    bottom: 5%;
+    left: 35%;
+    // width: 100%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.122);
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.715);
+    font-size:large;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+   .footer_main3_first {
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.315);
+    width: fit-content;
+    height: 60px;
+    padding: 0 10px;
+    margin-left: 5px;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.588);
+    color: rgba(255, 255, 255, 0.56);
+
+    &:hover{
+        cursor: pointer;
+        color: white;
         font-weight: bold;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        background-color: black;
+        transition: 0.3s ease;
+    }
+}
+
+    .footer_main3_second{
+        display: flex;
+        column-gap: 20px;
+        padding: 0;
         text-align: center;
         align-items: center;
         justify-content: center;
+        border: 1px solid rgba(0, 0, 0, 0.207);
+        height: 60px;
+        width: fit-content;
+        padding: 0 10px;
+        margin: 0;
         border-radius: 10px;
-        background-color: rgba(0, 0, 0, 0.588);
-        color: rgba(255, 255, 255, 0.56);
-    
-        &:hover{
-            cursor: pointer;
-            color: white;
-            font-weight: bold;
-            background-color: black;
-            transition: 0.3s ease;
-        }
-    }
-    
-        .footer_main3_second{
+        font-family: 'Times New Roman', Times, serif;
+        background-color: rgba(0, 0, 0, 0.207);
+
+
+        .second_main2{
             display: flex;
-            column-gap: 20px;
-            padding: 0;
-            text-align: center;
-            align-items: center;
             justify-content: center;
-            border: 1px solid rgba(0, 0, 0, 0.207);
-            height: 60px;
-            width: fit-content;
-            padding: 0 10px;
-            margin: 0;
-            border-radius: 10px;
-            font-family: 'Times New Roman', Times, serif;
-            background-color: rgba(0, 0, 0, 0.207);
-    
-            .second_main1{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-                border: 0.3px solid rgba(255, 255, 0, 0.777);
-                color: rgba(255, 255, 0, 0.777);
-                height: 40px;
-                border-radius: 7px;
-                width: 80px;
-                padding: 0 5px;
-                font-weight: normal;
-                font-size: smaller; 
-                
-                &:hover{
-                    cursor: pointer;
-                    color: black;
-                    font-weight: bold;
-                    background-color: rgba(255, 255, 0, 0.79);
-                    transition: 0.3s ease;
-                }
+            align-items: center;
+            text-align: center;
+            border: 0.3px solid rgba(255, 255, 255, 0.281);
+            color: rgba(255, 255, 255, 0.559);
+            height: 40px;
+            border-radius: 7px;
+            width: 80px;
+            padding: 0 5px;
+            font-weight: normal;
+            font-size: smaller; 
+            
+            &:hover{
+                cursor: pointer;
+                color: white;
+                // font-weight: bold;
+                background-color: black;
+                transition: 0.3s ease;
             }
         }
-    
     }
 
-    .footer_main2{
-        display: none;
-    }
-  }
+}
+
+}
