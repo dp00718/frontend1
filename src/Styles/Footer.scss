@@ -213,31 +213,13 @@
     
     
     .footer_main{
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-
-    .footer_main_first {
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-      align-items: center;
-      
-      .footer_main_second{
-        display: none;
-      }
-    }
-    }
-  
-  .footer_main2{
     display: none;
-  }
 
-  .footer_main3{
+}
+.footer_main3{
     position: fixed;
     bottom: 5%;
-    left: 35%;
-    // width: 100%;
+    left: 30%;
     border-radius: 15px;
     display: flex;
     justify-content: center;
@@ -292,31 +274,35 @@
         font-family: 'Times New Roman', Times, serif;
         background-color: rgba(0, 0, 0, 0.207);
 
+    }
 
-        .second_main2{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            border: 0.3px solid rgba(255, 255, 255, 0.281);
-            color: rgba(255, 255, 255, 0.559);
-            height: 40px;
-            border-radius: 7px;
-            width: 80px;
-            padding: 0 5px;
-            font-weight: normal;
-            font-size: smaller; 
-            
-            &:hover{
-                cursor: pointer;
-                color: white;
-                // font-weight: bold;
-                background-color: black;
-                transition: 0.3s ease;
-            }
+    .third_main1 {
+        display: flex;
+        border: 1px solid rgba(255, 255, 0, 0.322);
+        width: 50px;
+        height: 60px;
+        padding: 0 5px;
+        margin-right: 5px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        background-color:rgba(255, 255, 0, 0.322);
+        color: rgba(0, 0, 0, 0.764);
+        font-size: smaller;
+
+        &:hover{
+            cursor: pointer;
+            color: black;
+            transition: 0.5s ease;
+            font-weight: bold;
+            background-color: rgba(255, 255, 0, 0.79);
         }
     }
 
 }
-
+.footer_main2{
+    display: none;
+  }
 }
