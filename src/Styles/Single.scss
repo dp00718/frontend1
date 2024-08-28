@@ -1,8 +1,17 @@
+@import '../Page//mixin.scss';
+
 .product {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
+
+    @include md{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   
     .product-item {
       display: flex;
@@ -13,6 +22,14 @@
       border-radius: 8px;
       text-align: center;
       background-color: #f9f9f9;
+
+      @include md{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: auto;
+      }
   
       img {
         width: auto;
@@ -25,6 +42,8 @@
           transform: scale(1.05);
           border-radius: 10px;
         }
+
+
       }
   
       h3 {
@@ -103,22 +122,14 @@
     .product{  
       margin-top: auto;
       height: 100%;
-      
-      .product-item {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        height: 100%;
-        max-width: 200px; 
-        row-gap: 30px;
+ 
         img {
         max-width: 150px;
         height: 150px;
         }
       }
     }
-  }
+  
   
 
   

@@ -7,6 +7,7 @@ const Category = () => {
   return (
     <div className="category-container">
       {data.map((outer) => (
+        <>
         <img
           key={outer.id} // Ensure each item has a unique key
           src={outer.home_page_route_category_page_img}
@@ -16,6 +17,7 @@ const Category = () => {
           className="category-image"
           onClick={()=>window.open(`/category/${outer.product_category}`)}
         />
+        </>
       ))}
     </div>
   );

@@ -127,7 +127,14 @@ const [cart, setCart] = useState(() => {
 });
 // for save cart data state end
 const[sizeerror,setSizeerror] = useState(false)
-const[size,setSize]=useState(null)
+
+const[size,setSize]=useState('')
+
+const showSize = (s) =>{
+  setSize(s)
+  setSizeerror(false)
+}
+
 const handlecart = async(categoryid,productid,productimg,productname,productprice) =>{
 
   if(!token){
@@ -480,7 +487,7 @@ const  generateCaptcha = () =>{
     };
 
 return (
-<MyContext.Provider value={{handleSizeSelection, removeProductFromOrder,handleSubmit,handleRefresh,error, setError,enter, setEnter,captcha, setCaptcha,generateCaptcha,order, setOrder,wish, setWish,handlewish,removeProductFromWish,isProductInWish,edit,setEdit,shipping,setShipping,TotalValue,handleIncreaseQuantity,handleDecreaseQuantity,removeProductFromCart,cart, setCart,userdata,setUserdata,openaccount,setOpenaccount,handlecart,size,setSize,sizeerror,setSizeerror,login,setLogin,data,handlecartclose,handelclick8,handlecartopen,cartopen,setCartopen,setShowPassword1,showPassword1,handelclick1,handelclick2,handelclick3,handelclick4,handelclick5,handelclick6,open1,setOpen1,handelclick,token,setToken,open,setOpen,message,setMessage,showPassword,setShowPassword,loader,setLoader,handelclick7}} >
+<MyContext.Provider value={{showSize,handleSizeSelection, removeProductFromOrder,handleSubmit,handleRefresh,error, setError,enter, setEnter,captcha, setCaptcha,generateCaptcha,order, setOrder,wish, setWish,handlewish,removeProductFromWish,isProductInWish,edit,setEdit,shipping,setShipping,TotalValue,handleIncreaseQuantity,handleDecreaseQuantity,removeProductFromCart,cart, setCart,userdata,setUserdata,openaccount,setOpenaccount,handlecart,size,setSize,sizeerror,setSizeerror,login,setLogin,data,handlecartclose,handelclick8,handlecartopen,cartopen,setCartopen,setShowPassword1,showPassword1,handelclick1,handelclick2,handelclick3,handelclick4,handelclick5,handelclick6,open1,setOpen1,handelclick,token,setToken,open,setOpen,message,setMessage,showPassword,setShowPassword,loader,setLoader,handelclick7}} >
 {children}
 </MyContext.Provider>
 )

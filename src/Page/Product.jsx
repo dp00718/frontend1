@@ -5,7 +5,7 @@ import './Product.scss';
 
 const Product = () => {
     const { data } = useContext(MyContext);
-    const { category } = useParams();
+    const { category} = useParams();
 
     return (
         <div className="product">
@@ -20,8 +20,8 @@ const Product = () => {
                                     .map((inner) => {
                                         return (
                                             <div className="product-item">
-                                                <img src={inner.imgs1} alt="" onClick={()=>window.open(`/category/${outer.product_category}/${inner.product_name}`)}/>
-                                                <h3>{inner.product_name}</h3>
+                                                <img src={inner.imgs} alt="" onClick={()=>window.open(`/category/${outer.product_category}/${inner.single_product_category}`)}/>
+                                                <h3>{inner.single_product_category}</h3>
                                             </div>
                                         );
                                     })
