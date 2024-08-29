@@ -23,9 +23,9 @@ const Accountmodal = () => {
   <span><IoHome/></span>
   <span class="text">Account</span>
 </li>
-<li>
+<li onClick={handelclick2}>
   <span><IoHome/></span>
-  <span class="text" onClick={handelclick2}>Logout</span>
+  <span class="text" >Logout</span>
 </li>
 
 
