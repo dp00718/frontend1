@@ -50,7 +50,6 @@ const Registration = () => {
         const data=await response.json()
 
         if(data.success===true){
-          // alert(data.message)
           setMessage(data.message)
           setOpen(true)
           resetForm()
@@ -144,7 +143,7 @@ const Registration = () => {
 
         </div>
 
-        <Button variant="contained"  className='registration_page_button' type='submit' onClick={handelclick2}>SUBMIT</Button>
+        <Button variant="contained"  className='registration_page_button' type='submit'>SUBMIT</Button>
         <Button onClick={handelclick2}>Close</Button>
 
         </form>
