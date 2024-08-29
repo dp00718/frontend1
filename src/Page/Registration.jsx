@@ -9,6 +9,7 @@ import InputAdornment from '@mui/material/InputAdornment';
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import IconButton from '@mui/material/IconButton';
+import { Navigate } from 'react-router-dom';
 
 
 
@@ -41,18 +42,18 @@ const Registration = () => {
         setLoader(true)
         const response= await fetch('https://back-end-xi-nine.vercel.app/registration' ,{
           method: 'POST',
-          body:JSON.stringify(values),
           headers: {
             'Content-type': 'application/json',
             },
+            body:JSON.stringify(values),
         })
       
         const data=await response.json()
 
         if(data.success===true){
           alert(data.message)
-          setMessage(data.message)
           setOpen(true)
+          Navigate('/')
           resetForm()
         }  
         else{
