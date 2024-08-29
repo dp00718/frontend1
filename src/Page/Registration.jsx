@@ -9,7 +9,8 @@ import InputAdornment from '@mui/material/InputAdornment';
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import IconButton from '@mui/material/IconButton';
-import { Navigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom'
+
 
 
 
@@ -22,6 +23,7 @@ const Registration = () => {
     event.preventDefault();
   };
 
+  const Navigate = useNavigate()
 
   const formik = useFormik({
     initialValues: {
