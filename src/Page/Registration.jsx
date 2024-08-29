@@ -50,6 +50,7 @@ const Registration = () => {
         const data=await response.json()
 
         if(data.success===true){
+          alert(data.message)
           setMessage(data.message)
           setOpen(true)
           resetForm()

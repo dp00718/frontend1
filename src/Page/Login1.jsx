@@ -46,7 +46,7 @@ const Login = () => {
             const data=await response.json()
 
             if(data.success===true){
-          setMessage(data.message)
+              alert(data.message)
               setOpen(true)
               setToken(data.data)
               setUserdata(data.accountInfo)
